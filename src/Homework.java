@@ -2,14 +2,32 @@ public class Homework {
 
     public static void main(String[] args) {
 
-        byte ageChild = 13;
+        byte wagonCapacity = 102;
+        byte seatPlace = 60;
+        byte standingPlace = (byte) (wagonCapacity - seatPlace);
+        short numberOfPersons = 60;
+        short a = 0;
+        short b = 0;
 
-        if (ageChild < 5) {
-            System.out.println("Если возраст ребенка равен " + ageChild + ", то ему нельзя кататься на аттракционе.");
-        } else if (ageChild >= 5 && ageChild < 14) {
-            System.out.println("Если возраст человека равен " + ageChild + ", то ему можно кататься на аттракционе в сопровождении взрослого.");
-        } else if (ageChild >= 14) {
-            System.out.println("Если возраст человека равен " + ageChild + ", то ему можно кататься на аттракционе без сопровождении взрослого.");
+        if (numberOfPersons < wagonCapacity) {
+
+            b = (short) (wagonCapacity - numberOfPersons);
+
+            if ((wagonCapacity - b) <= standingPlace) {
+                a = 0;
+            } else {
+                a = (short) (b - standingPlace);
+                b = standingPlace;
+            }
+
+        }
+
+        if (numberOfPersons > wagonCapacity) {
+            System.out.println("Столько людей в вагон не влезет");
+        } else if (numberOfPersons == wagonCapacity) {
+            System.out.println("Вагон уже полностью забит");
+        } else if (numberOfPersons < wagonCapacity) {
+            System.out.println("В вагоне есть " + a + " сидячих мест и " + b + " стоячих мест");
         }
 
     }
