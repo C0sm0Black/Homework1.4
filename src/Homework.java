@@ -2,19 +2,19 @@ public class Homework {
 
     public static void main(String[] args) {
 
-        byte ageHuman1 = 19;
-        byte ageHuman2 = 16;
+        byte outsideTemperature1 = 4;
+        byte outsideTemperature2 = 8;
 
-        if (ageHuman1 >= 18) {
-            System.out.println("Если возраст человека равен " + ageHuman1 + ", то он совершеннолетний");
+        if (outsideTemperature1 < 5) {
+            System.out.println("На улице " + outsideTemperature1 + " градусов, нужно надеть шапку");
         } else {
-            System.out.println("Если возраст человека равен " + ageHuman1 + ", то он не достиг совершеннолетия, нужно немного подождать");
+            System.out.println("На улице " + outsideTemperature1 + " градусов, можно идти без шапки");
         }
 
-        if (ageHuman2 >= 18) {
-            System.out.println("Если возраст человека равен " + ageHuman2 + ", то он совершеннолетний");
+        if (outsideTemperature2 < 5) {
+            System.out.println("На улице " + outsideTemperature2 + " градусов, нужно надеть шапку");
         } else {
-            System.out.println("Если возраст человека равен " + ageHuman2 + ", то он не достиг совершеннолетия, нужно немного подождать");
+            System.out.println("На улице " + outsideTemperature2 + " градусов, можно идти без шапки");
         }
 
     }
