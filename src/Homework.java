@@ -2,32 +2,21 @@ public class Homework {
 
     public static void main(String[] args) {
 
-        byte wagonCapacity = 102;
-        byte seatPlace = 60;
-        byte standingPlace = (byte) (wagonCapacity - seatPlace);
-        short numberOfPersons = 60;
-        short a = 0;
-        short b = 0;
+        int one = 10;
+        int two = 5;
+        int three = 3;
 
-        if (numberOfPersons < wagonCapacity) {
-
-            b = (short) (wagonCapacity - numberOfPersons);
-
-            if ((wagonCapacity - b) <= standingPlace) {
-                a = 0;
+        if (one >= two){
+            if (one > three){
+                System.out.println(one);
             } else {
-                a = (short) (b - standingPlace);
-                b = standingPlace;
+                System.out.println(three);
             }
+        } else if (two > three) {
+            System.out.println(two);
 
-        }
-
-        if (numberOfPersons > wagonCapacity) {
-            System.out.println("Столько людей в вагон не влезет");
-        } else if (numberOfPersons == wagonCapacity) {
-            System.out.println("Вагон уже полностью забит");
-        } else if (numberOfPersons < wagonCapacity) {
-            System.out.println("В вагоне есть " + a + " сидячих мест и " + b + " стоячих мест");
+        } else {
+            System.out.println(three);
         }
 
     }
