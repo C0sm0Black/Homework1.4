@@ -2,19 +2,19 @@ public class Homework {
 
     public static void main(String[] args) {
 
-        byte outsideTemperature1 = 4;
-        byte outsideTemperature2 = 8;
+        short carSpeed1 = 68;
+        short carSpeed2 = 59;
 
-        if (outsideTemperature1 < 5) {
-            System.out.println("На улице " + outsideTemperature1 + " градусов, нужно надеть шапку");
+        if (carSpeed1 > 60) {
+            System.out.println("Если скорость " + carSpeed1 + ", то придется заплатить штраф");
         } else {
-            System.out.println("На улице " + outsideTemperature1 + " градусов, можно идти без шапки");
+            System.out.println("Если скорость " + carSpeed1 + ", то можно ездить спокойно");
         }
 
-        if (outsideTemperature2 < 5) {
-            System.out.println("На улице " + outsideTemperature2 + " градусов, нужно надеть шапку");
+        if (carSpeed2 > 60) {
+            System.out.println("Если скорость " + carSpeed2 + ", то придется заплатить штраф");
         } else {
-            System.out.println("На улице " + outsideTemperature2 + " градусов, можно идти без шапки");
+            System.out.println("Если скорость " + carSpeed2 + ", то можно ездить спокойно");
         }
 
     }
