@@ -2,24 +2,15 @@ public class Homework {
 
     public static void main(String[] args) {
 
-        byte ageHuman1 = 3;
-        byte ageHuman2 = 10;
-        byte ageHuman3 = 19;
-        byte ageHuman4 = 26;
+        byte ageChild = 13;
 
-        if (ageHuman1 >= 2 && ageHuman1 <= 6) {
-            System.out.println("Если возраст человека равен " + ageHuman1 + ", то ему нужно ходить в детский сад.");
+        if (ageChild < 5) {
+            System.out.println("Если возраст ребенка равен " + ageChild + ", то ему нельзя кататься на аттракционе.");
+        } else if (ageChild >= 5 && ageChild < 14) {
+            System.out.println("Если возраст человека равен " + ageChild + ", то ему можно кататься на аттракционе в сопровождении взрослого.");
+        } else if (ageChild >= 14) {
+            System.out.println("Если возраст человека равен " + ageChild + ", то ему можно кататься на аттракционе без сопровождении взрослого.");
         }
-        if (ageHuman2 >= 7 && ageHuman2 <= 18) {
-            System.out.println("Если возраст человека равен " + ageHuman2 + ", то ему нужно ходить в школу.");
-        }
-        if (ageHuman3 > 18 && ageHuman3 < 24) {
-            System.out.println("Если возраст человека равен " + ageHuman3 + ", то ему нужно ходить в в университет.");
-        }
-        if (ageHuman4 > 24) {
-            System.out.println("Если возраст человека равен " + ageHuman4 + ", то ему нужно ходить на работу.");
-        }
-
 
     }
 
